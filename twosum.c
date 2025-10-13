@@ -22,10 +22,8 @@ int main() {
 
     for(i=0;i<n;i++) {
         for(j=0;j<n;j++) {
-            if(i!=j) {
-                if((nums[i]+nums[j])==target)
+            if((i!=j)&&((nums[i]+nums[j])==target))
                     printf("Positions of the elements: %d, %d\n",i,j);
-            }
         }
     }
     return 0;
